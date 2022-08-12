@@ -1,4 +1,4 @@
-package com.ojhdtapp.paraboxdto
+package com.ojhdtapp.messagedto
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

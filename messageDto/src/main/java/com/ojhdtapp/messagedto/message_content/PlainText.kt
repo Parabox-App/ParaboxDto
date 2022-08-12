@@ -1,6 +1,5 @@
-package com.ojhdtapp.paraboxdto.message_content
+package com.ojhdtapp.messagedto.message_content
 
-import com.ojhdtapp.paraboxdto.message_content.MessageContent
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
