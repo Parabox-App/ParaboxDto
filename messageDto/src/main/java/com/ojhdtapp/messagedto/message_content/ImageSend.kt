@@ -4,7 +4,7 @@ import kotlinx.parcelize.Parcelize
 import java.io.File
 
 @Parcelize
-data class Image(val url: String, val width: Int, val height: Int) : MessageContent {
+data class ImageSend(val file: File) : MessageContent {
     val type = MessageContent.IMAGE
     override fun getContentString(): String {
         return "[图片]"
