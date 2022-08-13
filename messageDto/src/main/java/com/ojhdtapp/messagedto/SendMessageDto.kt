@@ -2,14 +2,12 @@ package com.ojhdtapp.messagedto
 
 import android.os.Parcelable
 import com.ojhdtapp.messagedto.message_content.MessageContent
-
 import kotlinx.parcelize.Parcelize
 
+
 @Parcelize
-data class MessageDto(
-    val contents: List<MessageContent>,
-    val profile: Profile,
-    val subjectProfile: Profile,
+data class SendMessageDto(
+    val content: List<MessageContent>,
     val timestamp: Long,
     val pluginConnection: PluginConnection
 ) : Parcelable
