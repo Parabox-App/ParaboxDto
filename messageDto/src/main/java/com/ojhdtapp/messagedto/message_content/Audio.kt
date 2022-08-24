@@ -11,7 +11,6 @@ data class Audio(
     val length: Long = 0L,
     val fileName: String = "",
     val fileSize: Long = 0L,
-    val sendIntent: Intent? = null,
     val uri: Uri? = null
 ) : MessageContent {
     val type = MessageContent.AUDIO

@@ -11,5 +11,6 @@ data class ReceiveMessageDto(
     val profile: Profile,
     val subjectProfile: Profile,
     val timestamp: Long,
+    val messageId: Long?,
     val pluginConnection: PluginConnection
 ) : Parcelable

@@ -10,7 +10,6 @@ data class Image(
     val url: String? = null,
     val width: Int = 0,
     val height: Int = 0,
-    val sendIntent: Intent? = null,
     val uri: Uri? = null,
 ) : MessageContent {
     val type = MessageContent.IMAGE

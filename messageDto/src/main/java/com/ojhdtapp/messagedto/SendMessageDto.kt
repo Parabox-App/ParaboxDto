@@ -9,5 +9,6 @@ import kotlinx.parcelize.Parcelize
 data class SendMessageDto(
     val contents: List<MessageContent>,
     val timestamp: Long,
-    val pluginConnection: PluginConnection
+    val pluginConnection: PluginConnection,
+    val messageId: Long?,
 ) : Parcelable
