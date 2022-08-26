@@ -4,10 +4,10 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class QuoteReply(
-    val quoteMessageId: Long,
+    val quoteMessageId: Long?,
     val quoteMessageContent: List<MessageContent>
 ) : MessageContent {
-    val type = MessageContent.IMAGE
+    val type = MessageContent.QUOTE_REPLY
     override fun getContentString(): String {
         return "[引用回复]"
     }
