@@ -1,5 +1,6 @@
 package com.ojhdtapp.messagedto.message_content
 
+import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
@@ -9,6 +10,7 @@ data class QuoteReply(
     val quoteMessageId: Long?,
     val quoteMessageContent: List<MessageContent>
 ) : MessageContent {
+    @IgnoredOnParcel
     val type = MessageContent.QUOTE_REPLY
     override fun getContentString(): String {
         return "[引用回复]"
